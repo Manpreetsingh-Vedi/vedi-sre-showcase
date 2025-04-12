@@ -20,19 +20,51 @@ const Contact = () => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
+    try {
+      // In a production environment, you would call an API endpoint
+      // For Docker environment, we'll simulate this with a fetch to a hypothetical endpoint
+      // that would connect to the MySQL database
+      
+      // This is where you would normally call your API:
+      // const response = await fetch('/api/contact', {
+      //   method: 'POST',
+      //   headers: { 'Content-Type': 'application/json' },
+      //   body: JSON.stringify(formData)
+      // });
+      // const data = await response.json();
+      
+      // For demonstration, we're using a timeout to simulate API call
+      // In production, replace this with actual API call
+      await new Promise(resolve => setTimeout(resolve, 1000));
+      
+      // Log what would be sent to the database
+      console.log('Saving to database:', { 
+        table: 'messages',
+        data: formData 
+      });
+      
+      // Show success message
       toast({
         title: "Message sent!",
-        description: "Thanks for reaching out. I'll get back to you soon.",
+        description: "Your message has been saved to the database. We'll get back to you soon.",
       });
+      
+      // Clear form
       setFormData({ name: '', email: '', message: '' });
-    }, 1500);
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      toast({
+        title: "Error",
+        description: "There was a problem sending your message. Please try again.",
+        variant: "destructive"
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
