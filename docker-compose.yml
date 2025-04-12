@@ -14,6 +14,8 @@ services:
       - MYSQL_USER=vediuser
       - MYSQL_PASSWORD=vedipassword
       - MYSQL_DATABASE=vediportfolio
+      - EMAIL_USER=manpreetsinghvedi15@gmail.com
+      - EMAIL_PASSWORD=${EMAIL_PASSWORD:-}
 
   db:
     image: mysql:8.0
