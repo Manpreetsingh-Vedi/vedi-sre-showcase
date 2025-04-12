@@ -20,26 +20,26 @@ const Hero = () => {
               Manpreet Singh Vedi
             </h1>
             <h2 className="text-2xl md:text-3xl font-semibold text-slate mb-6">
-              Site Reliability Engineer
+              Senior Cloud Engineer
             </h2>
             <p className="text-slate max-w-lg mb-8">
-              Results-driven Site Reliability Engineer with 5+ years of experience, currently leading cloud infrastructure at JLL Technologies. Focused on optimizing reliability, performance, and security for Google's critical systems.
+              Experienced Cloud Engineer with expertise in Google Cloud Platform, AWS, and Kubernetes. Currently working as a Senior Cloud Engineer at Jones Lang LaSalle (JLL), focused on designing and implementing scalable and resilient infrastructure solutions.
             </p>
             
             <div className="flex flex-wrap gap-4 mb-8">
               <button onClick={scrollToContact} className="btn-primary flex items-center gap-2">
                 Contact Me <ArrowDownCircle size={18} />
               </button>
-              <a href="https://www.linkedin.com/in/manpreetsinghvedi150196/" target="_blank" rel="noopener noreferrer" className="btn-primary bg-transparent">
+              <a href="https://www.linkedin.com/in/manpreetsinghvedi150196" target="_blank" rel="noopener noreferrer" className="btn-primary bg-transparent">
                 View LinkedIn Profile
               </a>
             </div>
             
             <div className="flex space-x-4">
-              <a href="https://github.com/manpreetsinghnanda150196" target="_blank" rel="noopener noreferrer" className="text-navy hover:text-teal transition-colors">
+              <a href="https://github.com/manpreetSinghVedi" target="_blank" rel="noopener noreferrer" className="text-navy hover:text-teal transition-colors">
                 <Github size={24} />
               </a>
-              <a href="https://www.linkedin.com/in/manpreetsinghvedi150196/" target="_blank" rel="noopener noreferrer" className="text-navy hover:text-teal transition-colors">
+              <a href="https://www.linkedin.com/in/manpreetsinghvedi150196" target="_blank" rel="noopener noreferrer" className="text-navy hover:text-teal transition-colors">
                 <Linkedin size={24} />
               </a>
               <a href="mailto:manpreetsinghnanda15@gmail.com" className="text-navy hover:text-teal transition-colors">

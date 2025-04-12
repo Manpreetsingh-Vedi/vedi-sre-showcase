@@ -18,7 +18,7 @@ const Education = () => {
             
             <div className="space-y-8">
               <div className="card animate-slide-up" style={{ animationDelay: '0.2s' }}>
-                <h4 className="text-lg font-semibold text-navy">Bachelor of Engineering in Computer Science</h4>
+                <h4 className="text-lg font-semibold text-navy">Bachelor of Technology in Computer Science</h4>
                 <p className="text-slate">Chitkara University, Punjab</p>
                 <div className="flex items-center text-slate my-2">
                   <Calendar size={16} className="mr-2" />
@@ -26,7 +26,7 @@ const Education = () => {
                 </div>
                 <p className="text-slate">
                   Studied core computer science subjects including data structures, algorithms, 
-                  operating systems, and software engineering principles with a focus on cloud computing.
+                  operating systems, and cloud computing with focus on distributed systems.
                 </p>
               </div>
             </div>
@@ -41,13 +41,13 @@ const Education = () => {
             
             <div className="space-y-4">
               <div className="card animate-slide-up" style={{ animationDelay: '0.4s' }}>
-                <h4 className="text-lg font-semibold text-navy">Google Cloud Professional DevOps Engineer</h4>
+                <h4 className="text-lg font-semibold text-navy">Google Cloud Professional Cloud Architect</h4>
                 <div className="flex items-center text-slate my-2">
                   <Calendar size={16} className="mr-2" />
                   <span>2023</span>
                 </div>
                 <p className="text-slate">
-                  Expertise in implementing SRE principles and DevOps practices on Google Cloud Platform.
+                  Expertise in designing, developing, and managing robust, secure, scalable, highly available, and dynamic solutions on Google Cloud.
                 </p>
               </div>
               
@@ -58,7 +58,7 @@ const Education = () => {
                   <span>2022</span>
                 </div>
                 <p className="text-slate">
-                  Deep knowledge of Kubernetes architecture, administration, and troubleshooting.
+                  Deep knowledge of Kubernetes architecture, installation, configuration, and troubleshooting.
                 </p>
               </div>
               
@@ -69,18 +69,18 @@ const Education = () => {
                   <span>2021</span>
                 </div>
                 <p className="text-slate">
-                  Proficiency in designing and deploying scalable systems on AWS infrastructure.
+                  Proficiency in designing and deploying scalable, highly available, and fault-tolerant systems on AWS.
                 </p>
               </div>
               
               <div className="card animate-slide-up" style={{ animationDelay: '0.7s' }}>
-                <h4 className="text-lg font-semibold text-navy">Cisco Certified Network Associate (CCNA)</h4>
+                <h4 className="text-lg font-semibold text-navy">HashiCorp Certified: Terraform Associate</h4>
                 <div className="flex items-center text-slate my-2">
                   <Calendar size={16} className="mr-2" />
-                  <span>2020</span>
+                  <span>2021</span>
                 </div>
                 <p className="text-slate">
-                  Expertise in network fundamentals, network access, IP connectivity, and security.
+                  Expertise in Infrastructure as Code principles and implementing infrastructure using HashiCorp Terraform.
                 </p>
               </div>
             </div>
