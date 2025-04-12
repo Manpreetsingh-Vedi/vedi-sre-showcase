@@ -23,28 +23,26 @@ const Hero = () => {
               Site Reliability Engineer
             </h2>
             <p className="text-slate max-w-lg mb-8">
-              I'm a skilled SRE currently working on Google projects at JLL, 
-              focused on ensuring system reliability, scalability, and performance. 
-              With expertise in cloud infrastructure, automation, and DevOps practices.
+              Results-driven Site Reliability Engineer with 5+ years of experience, currently leading cloud infrastructure at JLL Technologies. Focused on optimizing reliability, performance, and security for Google's critical systems.
             </p>
             
             <div className="flex flex-wrap gap-4 mb-8">
               <button onClick={scrollToContact} className="btn-primary flex items-center gap-2">
                 Contact Me <ArrowDownCircle size={18} />
               </button>
-              <a href="#" className="btn-primary bg-transparent">
-                Download CV
+              <a href="https://www.linkedin.com/in/manpreetsinghvedi150196/" target="_blank" rel="noopener noreferrer" className="btn-primary bg-transparent">
+                View LinkedIn Profile
               </a>
             </div>
             
             <div className="flex space-x-4">
-              <a href="#" className="text-navy hover:text-teal transition-colors">
+              <a href="https://github.com/manpreetsinghnanda150196" target="_blank" rel="noopener noreferrer" className="text-navy hover:text-teal transition-colors">
                 <Github size={24} />
               </a>
-              <a href="#" className="text-navy hover:text-teal transition-colors">
+              <a href="https://www.linkedin.com/in/manpreetsinghvedi150196/" target="_blank" rel="noopener noreferrer" className="text-navy hover:text-teal transition-colors">
                 <Linkedin size={24} />
               </a>
-              <a href="#" className="text-navy hover:text-teal transition-colors">
+              <a href="mailto:manpreetsinghnanda15@gmail.com" className="text-navy hover:text-teal transition-colors">
                 <Mail size={24} />
               </a>
             </div>

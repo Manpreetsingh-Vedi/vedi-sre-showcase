@@ -18,27 +18,15 @@ const Education = () => {
             
             <div className="space-y-8">
               <div className="card animate-slide-up" style={{ animationDelay: '0.2s' }}>
-                <h4 className="text-lg font-semibold text-navy">Bachelor of Technology in Computer Science</h4>
-                <p className="text-slate">University Name</p>
+                <h4 className="text-lg font-semibold text-navy">Bachelor of Engineering in Computer Science</h4>
+                <p className="text-slate">Chitkara University, Punjab</p>
                 <div className="flex items-center text-slate my-2">
                   <Calendar size={16} className="mr-2" />
                   <span>2015 - 2019</span>
                 </div>
                 <p className="text-slate">
                   Studied core computer science subjects including data structures, algorithms, 
-                  operating systems, and software engineering principles.
-                </p>
-              </div>
-              
-              <div className="card animate-slide-up" style={{ animationDelay: '0.3s' }}>
-                <h4 className="text-lg font-semibold text-navy">High School Diploma</h4>
-                <p className="text-slate">School Name</p>
-                <div className="flex items-center text-slate my-2">
-                  <Calendar size={16} className="mr-2" />
-                  <span>2013 - 2015</span>
-                </div>
-                <p className="text-slate">
-                  Focused on science and mathematics with computer applications.
+                  operating systems, and software engineering principles with a focus on cloud computing.
                 </p>
               </div>
             </div>
@@ -75,7 +63,7 @@ const Education = () => {
               </div>
               
               <div className="card animate-slide-up" style={{ animationDelay: '0.6s' }}>
-                <h4 className="text-lg font-semibold text-navy">AWS Certified Solutions Architect</h4>
+                <h4 className="text-lg font-semibold text-navy">AWS Certified Solutions Architect - Associate</h4>
                 <div className="flex items-center text-slate my-2">
                   <Calendar size={16} className="mr-2" />
                   <span>2021</span>
@@ -86,13 +74,13 @@ const Education = () => {
               </div>
               
               <div className="card animate-slide-up" style={{ animationDelay: '0.7s' }}>
-                <h4 className="text-lg font-semibold text-navy">HashiCorp Certified Terraform Associate</h4>
+                <h4 className="text-lg font-semibold text-navy">Cisco Certified Network Associate (CCNA)</h4>
                 <div className="flex items-center text-slate my-2">
                   <Calendar size={16} className="mr-2" />
-                  <span>2021</span>
+                  <span>2020</span>
                 </div>
                 <p className="text-slate">
-                  Expertise in infrastructure as code using Terraform across multiple cloud providers.
+                  Expertise in network fundamentals, network access, IP connectivity, and security.
                 </p>
               </div>
             </div>

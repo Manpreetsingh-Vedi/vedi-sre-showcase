@@ -22,12 +22,12 @@ const Skills = () => {
     {
       title: "CI/CD & Automation",
       icon: <Settings size={24} className="text-teal" />,
-      skills: ["Jenkins", "GitLab CI", "GitHub Actions", "ArgoCD", "Ansible", "Automation Scripting"]
+      skills: ["Jenkins", "GitHub Actions", "GitLab CI", "ArgoCD", "Ansible", "Automation Scripting"]
     },
     {
       title: "Programming & Scripting",
       icon: <Code size={24} className="text-teal" />,
-      skills: ["Python", "Bash", "Go", "JavaScript", "YAML", "JSON"]
+      skills: ["Python", "Bash", "JavaScript", "Node.js", "YAML", "JSON"]
     },
     {
       title: "Security & Compliance",
@@ -37,7 +37,7 @@ const Skills = () => {
     {
       title: "Database Systems",
       icon: <Database size={24} className="text-teal" />,
-      skills: ["MongoDB", "PostgreSQL", "MySQL", "Redis", "Database Administration", "Data Migration"]
+      skills: ["MongoDB", "PostgreSQL", "MySQL", "Redis", "DynamoDB", "Data Migration"]
     }
   ];
 
@@ -77,13 +77,13 @@ const Skills = () => {
                 </div>
               </div>
               <div className="mb-6">
-                <p className="text-sm font-medium text-navy mb-2">Infrastructure Automation</p>
+                <p className="text-sm font-medium text-navy mb-2">Cloud Architecture (GCP, AWS)</p>
                 <div className="w-full bg-gray-200 rounded-full h-2.5">
                   <div className="bg-teal h-2.5 rounded-full" style={{ width: '90%' }}></div>
                 </div>
               </div>
               <div className="mb-6">
-                <p className="text-sm font-medium text-navy mb-2">Cloud Architecture</p>
+                <p className="text-sm font-medium text-navy mb-2">Infrastructure Automation</p>
                 <div className="w-full bg-gray-200 rounded-full h-2.5">
                   <div className="bg-teal h-2.5 rounded-full" style={{ width: '85%' }}></div>
                 </div>
@@ -97,13 +97,13 @@ const Skills = () => {
                 </div>
               </div>
               <div className="mb-6">
-                <p className="text-sm font-medium text-navy mb-2">Monitoring & Alerting</p>
+                <p className="text-sm font-medium text-navy mb-2">CI/CD & DevOps Practices</p>
                 <div className="w-full bg-gray-200 rounded-full h-2.5">
                   <div className="bg-teal h-2.5 rounded-full" style={{ width: '85%' }}></div>
                 </div>
               </div>
               <div className="mb-6">
-                <p className="text-sm font-medium text-navy mb-2">CI/CD Pipeline Implementation</p>
+                <p className="text-sm font-medium text-navy mb-2">Monitoring & Observability</p>
                 <div className="w-full bg-gray-200 rounded-full h-2.5">
                   <div className="bg-teal h-2.5 rounded-full" style={{ width: '80%' }}></div>
                 </div>
