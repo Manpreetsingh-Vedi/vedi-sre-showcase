@@ -7,3 +7,27 @@ services:
     ports:
       - "8080:80"
     restart: unless-stopped
+    depends_on:
+      - db
+    environment:
+      - MYSQL_HOST=db
+      - MYSQL_USER=vediuser
+      - MYSQL_PASSWORD=vedipassword
+      - MYSQL_DATABASE=vediportfolio
+
+  db:
+    image: mysql:8.0
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./mysql-init:/docker-entrypoint-initdb.d
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: vediportfolio
+      MYSQL_USER: vediuser
+      MYSQL_PASSWORD: vedipassword
+    ports:
+      - "3306:3306"
+
+volumes:
+  mysql_data:

@@ -81,6 +81,34 @@ docker rm vedi-sre-showcase
 
 The application will be available at http://localhost:8080
 
+## MySQL Database
+
+This project includes a MySQL database for storing projects and contact form submissions. The database is automatically set up when using Docker Compose.
+
+### Database Details
+- **Database Name**: vediportfolio
+- **Username**: vediuser
+- **Password**: vedipassword
+- **Port**: 3306
+
+### Accessing the Database
+
+You can connect to the MySQL database using any MySQL client:
+
+```sh
+# Connect using the mysql command-line client
+mysql -h 127.0.0.1 -P 3306 -u vediuser -p
+
+# Or using Docker
+docker exec -it vedi-sre-showcase_db_1 mysql -u vediuser -p vediportfolio
+```
+
+### Database Schema
+
+The database includes the following tables:
+- `projects` - For storing portfolio projects
+- `messages` - For storing contact form submissions
+
 **Edit a file directly in GitHub**
 
 - Navigate to the desired file(s).
