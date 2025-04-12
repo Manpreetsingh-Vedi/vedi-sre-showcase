@@ -1,3 +1,4 @@
+
 # Welcome to your Lovable project
 
 ## Project info
@@ -35,6 +36,50 @@ npm i
 # Step 4: Start the development server with auto-reloading and an instant preview.
 npm run dev
 ```
+
+## Running with Docker
+
+This project can be run using Docker, which ensures consistency across different environments.
+
+### Prerequisites
+
+- [Docker](https://docs.docker.com/get-docker/)
+- [Docker Compose](https://docs.docker.com/compose/install/) (optional, but recommended)
+
+### Option 1: Using Docker Compose (Recommended)
+
+The easiest way to run the application is using Docker Compose:
+
+```sh
+# Build and start the container
+docker-compose up -d
+
+# View logs if needed
+docker-compose logs -f
+
+# Stop the container when done
+docker-compose down
+```
+
+The application will be available at http://localhost:8080
+
+### Option 2: Using Docker directly
+
+If you prefer using Docker commands directly:
+
+```sh
+# Build the Docker image
+docker build -t vedi-sre-showcase .
+
+# Run the container
+docker run -d -p 8080:80 --name vedi-sre-showcase vedi-sre-showcase
+
+# Stop the container when done
+docker stop vedi-sre-showcase
+docker rm vedi-sre-showcase
+```
+
+The application will be available at http://localhost:8080
 
 **Edit a file directly in GitHub**
 
