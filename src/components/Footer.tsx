@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { GitHub, Linkedin, Mail, ArrowUp } from 'lucide-react';
+import { Github, Linkedin, Mail, ArrowUp } from 'lucide-react';
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -25,7 +25,7 @@ const Footer = () => {
           
           <div className="flex space-x-6 mb-6 md:mb-0">
             <a href="#" className="text-slate-300 hover:text-teal transition-colors duration-300">
-              <GitHub size={20} />
+              <Github size={20} />
             </a>
             <a href="#" className="text-slate-300 hover:text-teal transition-colors duration-300">
               <Linkedin size={20} />

@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ArrowDownCircle, GitHub, Linkedin, Mail } from 'lucide-react';
+import { ArrowDownCircle, Github, Linkedin, Mail } from 'lucide-react';
 
 const Hero = () => {
   const scrollToContact = () => {
@@ -39,7 +39,7 @@ const Hero = () => {
             
             <div className="flex space-x-4">
               <a href="#" className="text-navy hover:text-teal transition-colors">
-                <GitHub size={24} />
+                <Github size={24} />
               </a>
               <a href="#" className="text-navy hover:text-teal transition-colors">
                 <Linkedin size={24} />
