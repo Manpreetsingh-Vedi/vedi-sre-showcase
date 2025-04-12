@@ -1,10 +1,9 @@
-
 import React, { useState } from 'react';
 import { Mail, MessageSquare, Send, User } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { useToast } from '@/components/ui/use-toast';
+import { useToast } from '@/hooks/use-toast';
 
 const Contact = () => {
   const { toast } = useToast();
@@ -25,36 +24,24 @@ const Contact = () => {
     setIsSubmitting(true);
     
     try {
-      // In a production environment, you would call an API endpoint
-      // For Docker environment, we'll simulate this with a fetch to a hypothetical endpoint
-      // that would connect to the MySQL database
-      
-      // This is where you would normally call your API:
-      // const response = await fetch('/api/contact', {
-      //   method: 'POST',
-      //   headers: { 'Content-Type': 'application/json' },
-      //   body: JSON.stringify(formData)
-      // });
-      // const data = await response.json();
-      
-      // For demonstration, we're using a timeout to simulate API call
-      // In production, replace this with actual API call
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      
-      // Log what would be sent to the database
-      console.log('Saving to database:', { 
-        table: 'messages',
-        data: formData 
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData)
       });
       
-      // Show success message
-      toast({
-        title: "Message sent!",
-        description: "Your message has been saved to the database. We'll get back to you soon.",
-      });
+      const data = await response.json();
       
-      // Clear form
-      setFormData({ name: '', email: '', message: '' });
+      if (data.success) {
+        toast({
+          title: "Message sent!",
+          description: "Your message has been received. We'll get back to you soon.",
+        });
+        
+        setFormData({ name: '', email: '', message: '' });
+      } else {
+        throw new Error(data.message || 'Failed to submit form');
+      }
     } catch (error) {
       console.error('Error submitting form:', error);
       toast({
