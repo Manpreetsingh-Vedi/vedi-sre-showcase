@@ -13,7 +13,7 @@ const Experience = () => {
           <div className="card animate-slide-up" style={{ animationDelay: '0.2s' }}>
             <div className="flex flex-col md:flex-row justify-between mb-4">
               <div>
-                <h3 className="text-xl font-bold text-navy">Senior Cloud Engineer</h3>
+                <h3 className="text-xl font-bold text-navy">Cloud Infrastructure Engineer</h3>
                 <div className="flex items-center text-slate mb-2">
                   <Building size={18} className="mr-2" />
                   <span>Jones Lang LaSalle (JLL)</span>

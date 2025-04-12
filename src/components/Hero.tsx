@@ -20,10 +20,10 @@ const Hero = () => {
               Manpreet Singh Vedi
             </h1>
             <h2 className="text-2xl md:text-3xl font-semibold text-slate mb-6">
-              Senior Cloud Engineer
+              Cloud Infrastructure Engineer
             </h2>
             <p className="text-slate max-w-lg mb-8">
-              Experienced Cloud Engineer with expertise in Google Cloud Platform, AWS, and Kubernetes. Currently working as a Senior Cloud Engineer at Jones Lang LaSalle (JLL), focused on designing and implementing scalable and resilient infrastructure solutions.
+              Experienced Cloud Engineer with expertise in Google Cloud Platform, AWS, and Kubernetes. Currently working as a Cloud Infrastructure Engineer at Jones Lang LaSalle (JLL), focused on designing and implementing scalable and resilient infrastructure solutions.
             </p>
             
             <div className="flex flex-wrap gap-4 mb-8">

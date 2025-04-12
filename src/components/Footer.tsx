@@ -19,7 +19,7 @@ const Footer = () => {
               <span className="text-teal">M</span>anpreet Vedi
             </h2>
             <p className="text-slate-300">
-              Senior Cloud Engineer
+              Cloud Infrastructure Engineer
             </p>
           </div>
           
