@@ -27,4 +27,5 @@ RUN npm ci --only=production
 EXPOSE 3000
 
 # Command to run the app
-CMD ["node", "src/server/server.js"]
+#CMD ["node", "src/server/server.js"]
+CMD ["node", "src/server/server.cjs"]
