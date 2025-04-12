@@ -26,6 +26,5 @@ RUN npm ci --only=production
 # Expose port
 EXPOSE 3000
 
-# Command to run the app
-#CMD ["node", "src/server/server.js"]
-CMD ["node", "src/server/server.cjs"]
+# Command to run the app - Using the correct file path
+CMD ["node", "src/server/server.js"]
