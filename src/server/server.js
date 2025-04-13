@@ -1,8 +1,13 @@
 
-const express = require('express');
-const bodyParser = require('body-parser');
-const path = require('path');
-const { submitContactMessage } = require('./api');
+import express from 'express';
+import bodyParser from 'body-parser';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+import { submitContactMessage } from './api.js';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 const app = express();
 const PORT = process.env.PORT || 3000;

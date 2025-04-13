@@ -1,6 +1,6 @@
 
-const mysql = require('mysql2/promise');
-const nodemailer = require('nodemailer');
+import mysql from 'mysql2/promise';
+import nodemailer from 'nodemailer';
 
 // Create a connection pool
 const pool = mysql.createPool({
@@ -29,7 +29,7 @@ const transporter = nodemailer.createTransport({
  * @param {Object} messageData - The message data to submit
  * @returns {Promise<Object>} - Result of the operation
  */
-async function submitContactMessage(messageData) {
+export async function submitContactMessage(messageData) {
   try {
     const { name, email, message } = messageData;
     
@@ -94,7 +94,3 @@ async function sendEmailNotification(messageData) {
 
   return transporter.sendMail(mailOptions);
 }
-
-module.exports = {
-  submitContactMessage
-};

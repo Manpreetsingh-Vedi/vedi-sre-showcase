@@ -24,5 +24,5 @@ COPY --from=build /app/src/server ./src/server
 # Expose port
 EXPOSE 3000
 
-# Command to run the app - Using the correct file path
+# Command to run the app
 CMD ["node", "src/server/server.js"]
