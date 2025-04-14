@@ -3,9 +3,11 @@ FROM node:20-alpine
 
 WORKDIR /app
 
-# Copy package files and install dependencies
+# Copy package files
 COPY package*.json ./
-RUN npm install
+
+# Install all dependencies explicitly including express and other required packages
+RUN npm install express body-parser nodemailer mysql2
 
 # Copy the rest of the application
 COPY . .
