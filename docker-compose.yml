@@ -16,6 +16,10 @@ services:
       - MYSQL_DATABASE=vediportfolio
       - EMAIL_USER=manpreetsinghvedi15@gmail.com
       - EMAIL_PASSWORD=${EMAIL_PASSWORD:-}
+    volumes:
+      - ./src:/app/src
+      - ./dist:/app/dist
+      - /app/node_modules
 
   db:
     image: mysql:8.0
