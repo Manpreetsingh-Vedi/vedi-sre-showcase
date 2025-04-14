@@ -19,6 +19,7 @@ services:
     volumes:
       - ./src:/app/src
       - ./dist:/app/dist
+      # Don't override node_modules with a bind mount
       - /app/node_modules
 
   db:
